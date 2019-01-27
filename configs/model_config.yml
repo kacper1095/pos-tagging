@@ -1,0 +1,24 @@
+# model config
+hidden_dim_1: 256
+hidden_dim_2: 128
+
+num_layers_1: 2
+num_layers_2: 1
+
+input_size: 300
+
+tagset_size: 35
+
+# training
+epochs: 30
+batch_size: 32
+base_lr: 0.5
+optimizer: 'sgd'
+kfolds: 10
+data_workers: 8
+min_eta: 0.00005
+
+# super convergence
+warmup_learning_rate: 0.001
+warmup_steps_percentage: 0.2
+max_lr: 1
